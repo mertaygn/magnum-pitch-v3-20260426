@@ -119,6 +119,16 @@ h2.lg{font-weight:800;letter-spacing:-.025em;line-height:1.08}
 .split .img img{width:100%;height:100%;object-fit:cover}
 .split .img::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--ink),transparent 22%)}
 
+/* benchmark map */
+.map{display:grid;grid-template-columns:1fr 1fr;gap:18px;max-width:62em;margin-top:28px}
+.mp{border:1px solid var(--dk-line);border-radius:12px;padding:22px 24px;background:rgba(255,255,255,.03)}
+.mp.open-side{border-color:rgba(201,168,76,.5);background:rgba(201,168,76,.08)}
+.ml{font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--dk-40);margin-bottom:15px}
+.ml.gold-l{color:var(--gold)}
+.tags{display:flex;flex-wrap:wrap;gap:8px}
+.tags span{font-size:13px;color:var(--dk-60);border:1px solid var(--dk-line);border-radius:20px;padding:5px 13px}
+.tags.gold-tags span{color:#fff;border-color:rgba(201,168,76,.45)}
+.mn{font-size:12px;color:var(--dk-40);margin-top:15px}
 /* gold glow (dark statement slides) */
 .glow{position:absolute;right:-6%;top:50%;transform:translateY(-50%);width:52%;height:78%;
   background:radial-gradient(ellipse at center,rgba(201,168,76,.13),rgba(201,168,76,.04) 45%,transparent 72%);
@@ -155,7 +165,7 @@ h2.lg{font-weight:800;letter-spacing:-.025em;line-height:1.08}
       <div class="eyebrow">Bir Fikir Teklifi</div>
       <h1 class="xl" style="font-size:78px">Gerçek Haz<br><span class="gold">Planlanmaz.</span></h1>
       <div class="rule"></div>
-      <div class="sub">Magnum için yaz 2026 sosyal medya kampanya konsepti</div>
+      <div class="sub">Haz ciddiye alınır — ama planlanmaz.<br><span style="opacity:.72">Magnum için yaz 2026 kampanya konsepti</span></div>
     </div>
   </section>
 
@@ -174,17 +184,24 @@ h2.lg{font-weight:800;letter-spacing:-.025em;line-height:1.08}
     </div>
   </section>
 
-  <!-- 3 STRATEJİK BOŞLUK (dark) -->
+  <!-- 3 BENCHMARK / KONUM HARİTASI (dark) -->
   <section class="slide" data-dark="1">
     <div class="glow"></div>
-    <div class="tl">SIGNATURE EXPERIENCE</div><div class="tr">STRATEJİK BOŞLUK</div>
+    <div class="tl">SIGNATURE EXPERIENCE</div><div class="tr">BENCHMARK</div>
     <div class="pad">
-      <div class="eyebrow">Fırsat</div>
-      <h2 class="lg" style="font-size:40px">Tatil sahnesi dolu.<br><span class="gold">"Anlık" henüz kimsenin değil.</span></h2>
-      <p class="lead">Dondurma bir tatil anısı değil; sıcakta, büfe önünde, o an alınan bir şey. Bu satın alım gerçeği henüz bir marka fikrine dönüşmedi.</p>
-      <div class="box">
-        <div class="bl">Kategori Gerçeği — Türkiye</div>
-        <p>Dondurma her gün on binlerce noktada anlık alınıyor: büfede, sokakta, şehirde — tatil sahnesinde değil.</p>
+      <div class="eyebrow">Kategori Manzarası</div>
+      <h2 class="lg" style="font-size:38px">Kategorinin yaz dili dolu.<br><span class="gold">Plansız an boş.</span></h2>
+      <div class="map">
+        <div class="mp">
+          <div class="ml">Kategori sahnesi — dolu</div>
+          <div class="tags"><span>tatil</span><span>sahil</span><span>ünlü yüz</span><span>stüdyo kurgusu</span><span>planlı mutluluk</span></div>
+          <div class="mn">Marka değişir, sahne aynı kalır.</div>
+        </div>
+        <div class="mp open-side">
+          <div class="ml gold-l">Açık alan — Magnum</div>
+          <div class="tags gold-tags"><span>plansız an</span><span>şehir</span><span>kurgusuz</span><span>gerçek hayat</span><span>premium haz</span></div>
+          <div class="mn">Henüz kimsenin sahiplenmediği taraf — ilk gelen kalır.</div>
+        </div>
       </div>
     </div>
   </section>
@@ -195,11 +212,11 @@ h2.lg{font-weight:800;letter-spacing:-.025em;line-height:1.08}
     <div class="tl">SIGNATURE EXPERIENCE</div><div class="tr">KAMPANYA FİKRİ</div>
     <div class="pad">
       <div class="eyebrow">Ana Fikir — Yaz 2026</div>
-      <h2 class="lg" style="font-size:60px">Planlan<span class="gold">madı.</span></h2>
-      <p class="lead">Magnum'un yaz konsepti üç temel üzerinde durur.</p>
+      <h2 class="lg" style="font-size:56px">Planlan<span class="gold">madı.</span></h2>
+      <p class="lead">Haz ciddiye alınır — ama planlanmaz. Konsept üç temel üzerinde durur.</p>
       <div class="cards" style="max-width:58em">
-        <div class="card"><div class="cl">Kavram</div><div class="ct">Anlık</div><div class="cd">Magnum'un sahipleneceği tek kelime. Tatil değil an; plan değil, o anda olan.</div></div>
-        <div class="card"><div class="cl">Düşman</div><div class="ct">Kurgu haz endüstrisi</div><div class="cd">Planlı, stüdyo, ünlü yüz. Sektör üretir, izleyen kaydırır.</div></div>
+        <div class="card"><div class="cl">Kavram</div><div class="ct">Plansız an</div><div class="cd">Sahiplenilen, hazzın kendisi değil anın plansızlığı. Magnum'un premium derinliği korunur; sahnesi gerçek hayata taşınır.</div></div>
+        <div class="card"><div class="cl">Düşman</div><div class="ct">Planlı haz sahnesi</div><div class="cd">Tatil kurgusu, stüdyo, ünlü yüz. Sektör üretir, izleyen kaydırır.</div></div>
         <div class="card"><div class="cl">İddia</div><div class="ct">Gerçek haz planlanmaz</div><div class="cd">Kampanya biter, bu cümle kalır. Her yaz tekrarlanınca Magnum'a bağlanır.</div></div>
       </div>
     </div>
@@ -225,12 +242,11 @@ h2.lg{font-weight:800;letter-spacing:-.025em;line-height:1.08}
     <div class="split">
       <div class="txt">
         <div class="eyebrow">Nasıl Çalışır</div>
-        <h2 class="lg" style="font-size:34px">Tek kelimeden,<br>üç katman içerik.</h2>
-        <p class="lead" style="max-width:24em">Hepsi aynı mesajı taşır: kurgusuzluk, anlık an. Signature kurar ve yönetir; Magnum sahiplenir.</p>
-        <div class="pts" style="max-width:26em;margin-top:16px">
-          <div class="pt"><div class="n">01</div><div><div class="t">Senaryosuz çekim — TikTok / Reels</div><div class="d">15 saniye, gerçek an: ofis çıkışı, büfe köşesi, park durağı. Signature üretir.</div></div></div>
-          <div class="pt"><div class="n">02</div><div><div class="t">Kullanıcı içeriği — Instagram</div><div class="d">"Bu yaz planlamadan ne yaptın?" Magnum seçer ve paylaşır.</div></div></div>
-          <div class="pt"><div class="n">03</div><div><div class="t">Şehir içerik üreticileri</div><div class="d">Tatil yıldızı değil; şehirde yaşayan, kurgusuz üreten isimler.</div></div></div>
+        <h2 class="lg" style="font-size:34px">İki katman,<br>tek cümle.</h2>
+        <p class="lead" style="max-width:24em">Önce geniş erişim, sonra gerçek an. Signature kurar ve yönetir; Magnum sahiplenir.</p>
+        <div class="pts" style="max-width:27em;margin-top:16px">
+          <div class="pt"><div class="n">A</div><div><div class="t">Geniş erişim — marka inşası</div><div class="d">"Gerçek haz planlanmaz" premium bir marka filmiyle kitleye taşınır. İlk bağımsız sezon geniş görünürlük ister.</div></div></div>
+          <div class="pt"><div class="n">B</div><div><div class="t">Sosyal aktivasyon — gerçek an</div><div class="d">Senaryosuz 15 saniye, kullanıcı içeriği ("bu yaz planlamadan ne yaptın?") ve şehir içerik üreticileri — tatil değil, şehir.</div></div></div>
         </div>
       </div>
       <div class="img"><img src="moment.jpg" alt="Şehirde anlık an"></div>
