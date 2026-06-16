@@ -120,15 +120,16 @@ h2.lg{font-weight:800;letter-spacing:-.025em;line-height:1.08}
 .split .img::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--ink),transparent 22%)}
 
 /* benchmark map */
-.map{display:grid;grid-template-columns:1fr 1fr;gap:18px;max-width:62em;margin-top:28px}
-.mp{border:1px solid var(--dk-line);border-radius:12px;padding:22px 24px;background:rgba(255,255,255,.03)}
-.mp.open-side{border-color:rgba(201,168,76,.5);background:rgba(201,168,76,.08)}
-.ml{font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--dk-40);margin-bottom:15px}
+.map{display:grid;grid-template-columns:1.32fr .68fr;gap:20px;max-width:62em;margin-top:26px}
+.mp{border:1px solid var(--dk-line);border-radius:12px;padding:20px 22px;background:rgba(255,255,255,.03)}
+.mp.open-side{border-color:rgba(201,168,76,.5);background:rgba(201,168,76,.07);display:flex;flex-direction:column;justify-content:center;align-items:flex-start}
+.ml{font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--dk-40);margin-bottom:14px}
 .ml.gold-l{color:var(--gold)}
 .tags{display:flex;flex-wrap:wrap;gap:8px}
-.tags span{font-size:13px;color:var(--dk-60);border:1px solid var(--dk-line);border-radius:20px;padding:5px 13px}
-.tags.gold-tags span{color:#fff;border-color:rgba(201,168,76,.45)}
-.mn{font-size:12px;color:var(--dk-40);margin-top:15px}
+.tags.crowd{gap:6px}
+.tags.crowd span{font-size:12px;color:rgba(255,255,255,.30);border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:4px 11px}
+.big-chip{align-self:flex-start;font-size:24px;font-weight:800;color:#fff;border:1.5px solid var(--gold);border-radius:32px;padding:13px 28px;margin:6px 0 14px;box-shadow:0 0 44px rgba(201,168,76,.16)}
+.mn{font-size:12px;color:var(--dk-40);margin-top:14px}
 /* gold glow (dark statement slides) */
 .glow{position:absolute;right:-6%;top:50%;transform:translateY(-50%);width:52%;height:78%;
   background:radial-gradient(ellipse at center,rgba(201,168,76,.13),rgba(201,168,76,.04) 45%,transparent 72%);
@@ -192,15 +193,15 @@ h2.lg{font-weight:800;letter-spacing:-.025em;line-height:1.08}
       <div class="eyebrow">Kategori Manzarası</div>
       <h2 class="lg" style="font-size:38px">Kategorinin yaz dili dolu.<br><span class="gold">Plansız an boş.</span></h2>
       <div class="map">
-        <div class="mp">
+        <div class="mp crowded">
           <div class="ml">Kategori sahnesi — dolu</div>
-          <div class="tags"><span>tatil</span><span>sahil</span><span>ünlü yüz</span><span>stüdyo kurgusu</span><span>planlı mutluluk</span></div>
+          <div class="tags crowd"><span>tatil</span><span>sahil</span><span>ünlü yüz</span><span>stüdyo</span><span>planlı mutluluk</span><span>tatil</span><span>kurgu</span><span>sahil</span><span>ünlü yüz</span><span>tatil</span><span>stüdyo</span><span>kurgu</span><span>sahil</span><span>planlı an</span><span>tatil</span><span>ünlü yüz</span></div>
           <div class="mn">Marka değişir, sahne aynı kalır.</div>
         </div>
         <div class="mp open-side">
           <div class="ml gold-l">Açık alan — Magnum</div>
-          <div class="tags gold-tags"><span>plansız an</span><span>şehir</span><span>kurgusuz</span><span>gerçek hayat</span><span>premium haz</span></div>
-          <div class="mn">Henüz kimsenin sahiplenmediği taraf — ilk gelen kalır.</div>
+          <div class="big-chip">Plansız an</div>
+          <div class="mn">Henüz kimsenin değil — ilk gelen kalır.</div>
         </div>
       </div>
     </div>
